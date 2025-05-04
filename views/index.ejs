@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SolaraAI</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">
+      <div class="brand-container">
+        <h2 class="brand animated-glow">SolaraAI</h2>
+        <span id="theme-icon" class="theme-icon">🌞</span>
+      </div>
+      <label class="theme-switch">
+        <input type="checkbox" id="theme-toggle" />
+        <span class="slider"></span>
+      </label>
+    </div>
+    <div id="chat-box"></div>
+    <div id="typing-indicator" class="typing-indicator">SolaraAI is thinking<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span></div>
+    <form id="chat-form">
+      <input type="text" id="user-input" autocomplete="off" placeholder="Type a message..." required />
+      <button>Send</button>
+    </form>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/chat.js"></script>
+</body>
+</html>
